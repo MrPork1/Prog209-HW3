@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sean Kelly - Prog209 - HW3</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+<form name = "mainFrom" onsubmit="return false">
+	<fieldset id="custInfo">
+    <legend>Customer Information</legend>
+    <table>
+        <tr><td>Name:</td>
+        <td><input name="custname" id="custname"></input></td>
+        </tr>
+        <tr><td>City:</td>
+            <td><input name="city" id="city"></input></td>
+        </tr>
+        <tr><td>Payment Preference:</td>
+            <td><select name="payment" id="payment">
+                <option value="Cash">Cash</option>
+                <option value="Credit">VISA or MC</option>
+                <option value="Debit">Debit Card</option>
+            </select></td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit" onclick="formSubmitEvent()">
+    
+    </fieldset>
+    
+	<fieldset id="myCustomers">
+    <legend>My Customers</legend>
+    <div id="list">
+
+    </div>
+    </fieldset>
+
+</form>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
